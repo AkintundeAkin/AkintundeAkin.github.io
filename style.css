@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    /*color: rgb(45, 4, 83);*/
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-left: 15%;
+    column-gap: 20%;
+   
+}
+
+.grid-1{
+    margin-left: 20px;
+
+    
+}
+
+#bt-1{
+    background-color:hsl(248, 32%, 49%);
+    color: white;
+    font-size: 16px;
+    padding: 10px 60px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 0em;
+    box-shadow: 0px 0px 2px 0px hsl(249 10% 26%);
+}
+
+.for-form {
+    width: 450px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px hsl(249 10% 26%);
+    padding: 15px;
+  }
+  input {
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid hsl(246 25% 77%);
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .f-button {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Poppins' Sans-Serif;
+    margin-bottom: 10px;
+    border: none;
+    height: 50px;
+  }
+
+  .f-footer{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+
+  }
+
+  a{
+    font-weight: 700;
+    color: hsl(0, 100%, 74%);
+  }
+
+  ::placeholder {
+    font-family: 'Poppins' Sans-Serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  input:required:invalid {
+    outline: none;
+    border: 1px solid hsl(0, 100% 74%);
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+  }
+
+  input:focus:invalid~.error::after {
+    content: attr(data-error);
+    position: relative;
+    bottom: 0;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    right: 0;
+    padding-bottom: 1rem;
+    color: hsl(0, 100%, 74%);
+    float: right;
+  }
+
+h1{
+    color: white;
+    
+    
+}
+p{
+    color: white;
+    font-weight: 400; 
+}
+
+
+   
+ @media screen and (max-width:1440px) and (min-width:375px) { 
+    .grid-container{ 
+        margin: auto 60px;
+    }   
+}
+@media (max-width: 857px) and (min-width: 357px) {
+    body {
+    background: url(bg-intro-mobile.png) ;
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins' Sans-Serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  }
